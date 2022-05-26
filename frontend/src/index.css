@@ -39,6 +39,7 @@ body {
 header {
     grid-area: header; /* connects to header in grid-container*/
     background-color: forestgreen;
+    height: 50px;
 }
 main {
     grid-area: main;
@@ -96,12 +97,14 @@ button.block {
 /* Header*/
 header a {
     color: white;
-    padding: 1 rem;
+    padding: 1px;
+    margin: 1px;
 }
 a.brand{
     color: burlywood;
     font-size: 3rem;
     font-weight: bold;
+    padding:100px;
 }
 .row{
     display: flex;
