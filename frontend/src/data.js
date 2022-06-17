@@ -1,11 +1,11 @@
 const data = {
     products: [
         {
-            _id:'1',
-            name:'Calia Lily',
-            category: 'Annual Plants',
+            _id: '1',
+            name: 'Calia Lily',
+            category: 'Annual-Plants',
             image: '/images/p1.jpg',
-            price:24.99,
+            price: 24.99,
             countInStock: 10,
             brand: 'Green Garden',
             rating: 5,
@@ -13,11 +13,11 @@ const data = {
             description: 'Peach, #6.5 pot'
         },
         {
-            _id:'2',
-            name:'Begonia',
-            category: 'Annual Plants',
+            _id: '2',
+            name: 'Begonia',
+            category: 'Annual-Plants',
             image: '/images/p2.jpg',
-            price:14.99,
+            price: 14.99,
             countInStock: 10,
             brand: 'Green Garden',
             rating: 5,
@@ -25,11 +25,11 @@ const data = {
             description: 'Peach, #6.0 pot'
         },
         {
-            _id:'3',
-            name:'Gardenia',
-            category: 'Annual Plants',
+            _id: '3',
+            name: 'Gardenia',
+            category: 'Annual-Plants',
             image: '/images/p3.jpg',
-            price:39.99,
+            price: 39.99,
             countInStock: 10,
             brand: 'Green Garden',
             rating: 5,
@@ -37,9 +37,9 @@ const data = {
             description: 'Button, Bush'
         },
         {
-            _id:'4',
-            name:'Dahlia',
-            category: 'Annual Plants',
+            _id: '4',
+            name: 'Dahlia',
+            category: 'Annual-Plants',
             image: '/images/p4.jpg',
             price: 21.99,
             countInStock: 10,
@@ -49,11 +49,11 @@ const data = {
             description: 'Grande Emilio'
         },
         {
-            _id:'5',
-            name:'Petunia',
-            category: 'Annual Plants',
+            _id: '5',
+            name: 'Petunia',
+            category: 'Annual-Plants',
             image: '/images/p5.jpg',
-            price:19.99,
+            price: 19.99,
             countInStock: 10,
             brand: 'Green Garden',
             rating: 5,
@@ -61,9 +61,9 @@ const data = {
             description: 'Proven Winnersd'
         },
         {
-            _id:'6',
-            name:'Lobelia',
-            category: 'Annual Plants',
+            _id: '6',
+            name: 'Lobelia',
+            category: 'Annual-Plants',
             image: '/images/p6.jpg',
             price: 5.49,
             countInStock: 10,
@@ -73,11 +73,11 @@ const data = {
             description: 'Laguna Dark Blue'
         },
         {
-            _id:'7',
-            name:'Petunia',
-            category: 'Annual Plants',
+            _id: '7',
+            name: 'Petunia',
+            category: 'Annual-Plants',
             image: '/images/p7.jpg',
-            price:19.99,
+            price: 19.99,
             countInStock: 10,
             brand: 'Green Garden',
             rating: 5,
@@ -85,21 +85,21 @@ const data = {
             description: 'Velvet Hanging Basket'
         },
         {
-            _id:'8',
-            name:'Petunia',
-            category: 'Annual Plants',
+            _id: '8',
+            name: 'Petunia',
+            category: 'Annual-Plants',
             image: '/images/p8.jpg',
-            price:19.99,
+            price: 19.99,
             countInStock: 10,
             brand: 'Green Garden',
             rating: 5,
             numReviews: 10,
             description: 'Watermelon Hanging Basket'
-        }, 
+        },
         {
             _id: '9',
             name: 'Fern',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p9.jpg',
             price: 34.99,
             countInStock: 10,
@@ -111,7 +111,7 @@ const data = {
         {
             _id: '10',
             name: 'Arborvitae',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p10.jpg',
             price: 119.99,
             countInStock: 10,
@@ -123,7 +123,7 @@ const data = {
         {
             _id: '11',
             name: 'Strawberries',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p11.jpg',
             price: 9.99,
             countInStock: 10,
@@ -135,7 +135,7 @@ const data = {
         {
             _id: '12',
             name: 'Lavendar',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p12.jpg',
             price: 119.99,
             countInStock: 10,
@@ -146,7 +146,7 @@ const data = {
         }, {
             _id: '13',
             name: 'Cherry Tomato',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p13.jpg',
             price: 5.19,
             countInStock: 10,
@@ -157,7 +157,7 @@ const data = {
         }, {
             _id: '14',
             name: 'Cucumber',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p14.jpg',
             price: 5.19,
             countInStock: 10,
@@ -168,7 +168,7 @@ const data = {
         }, {
             _id: '15',
             name: 'Hydrangea',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p15.jpg',
             price: 39.99,
             countInStock: 10,
@@ -176,11 +176,11 @@ const data = {
             rating: 5,
             numReviews: 10,
             description: 'lace-cap hydrangea and has exceptionally rich, vibrant flowers'
-        }, 
+        },
         {
             _id: '16',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -192,7 +192,7 @@ const data = {
         {
             _id: '17',
             name: 'Bloom Plus',
-            category: 'Garden Supplies & Plant Care',
+            category: 'Garden-Supplies-&-Plant-Care',
             image: '/images/p17.jpg',
             price: 10.99,
             countInStock: 10,
@@ -204,7 +204,7 @@ const data = {
         {
             _id: '18',
             name: 'Watering Can',
-            category: 'Garden Supplies & Plant Care',
+            category: 'Garden-Supplies-&-Plant-Care',
             image: '/images/p18.jpg',
             price: 29.99,
             countInStock: 10,
@@ -216,7 +216,7 @@ const data = {
         {
             _id: '19',
             name: 'Repel Spray',
-            category: 'Garden Supplies & Plant Care',
+            category: 'Garden-Supplies-&-Plant-Care',
             image: '/images/p19.jpg',
             price: 29.59,
             countInStock: 10,
@@ -228,7 +228,7 @@ const data = {
         {
             _id: '20',
             name: 'Handle Tool Trowel',
-            category: 'Garden Supplies & Plant Care',
+            category: 'Garden-Supplies-&-Plant-Care',
             image: '/images/p20.jpg',
             price: 14.99,
             countInStock: 10,
@@ -240,7 +240,7 @@ const data = {
         {
             _id: '21',
             name: 'Flower Seed Kit',
-            category: 'Garden Supplies & Plant Care',
+            category: 'Garden-Supplies-&-Plant-Care',
             image: '/images/21.jpg',
             price: 9.99,
             countInStock: 10,
@@ -252,7 +252,7 @@ const data = {
         {
             _id: '22',
             name: 'Weed Out',
-            category: 'Garden Supplies & Plant Care',
+            category: 'Garden-Supplies-&-Plant-Care',
             image: '/images/p22.jpg',
             price: 14.99,
             countInStock: 10,
@@ -264,7 +264,7 @@ const data = {
         {
             _id: '23',
             name: 'Soil Moist',
-            category: 'Garden Supplies & Plant Care',
+            category: 'Garden-Supplies-&-Plant-Care',
             image: '/images/p23.jpg',
             price: 29.99,
             countInStock: 10,
@@ -276,7 +276,7 @@ const data = {
         {
             _id: '24',
             name: 'Coiled Hose with Nozzle',
-            category: 'Garden Supplies & Plant Care',
+            category: 'Garden-Supplies-&-Plant-Care',
             image: '/images/p24.jpg',
             price: 49.99,
             countInStock: 10,
@@ -288,7 +288,7 @@ const data = {
         {
             _id: '25',
             name: 'Hand Trowel',
-            category: 'Garden Supplies & Plant Care',
+            category: 'Garden-Supplies-&-Plant-Care',
             image: '/images/p25.jpg',
             price: 24.99,
             countInStock: 10,
@@ -300,7 +300,7 @@ const data = {
         {
             _id: '26',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -312,7 +312,7 @@ const data = {
         {
             _id: '27',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -324,7 +324,7 @@ const data = {
         {
             _id: '28',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -336,7 +336,7 @@ const data = {
         {
             _id: '29',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -348,7 +348,7 @@ const data = {
         {
             _id: '30',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -360,7 +360,7 @@ const data = {
         {
             _id: '31',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -372,7 +372,7 @@ const data = {
         {
             _id: '32',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -384,7 +384,7 @@ const data = {
         {
             _id: '33',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -396,7 +396,7 @@ const data = {
         {
             _id: '34',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -408,7 +408,7 @@ const data = {
         {
             _id: '35',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -420,7 +420,7 @@ const data = {
         {
             _id: '37',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -432,7 +432,7 @@ const data = {
         {
             _id: '38',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -444,7 +444,7 @@ const data = {
         {
             _id: '39',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -456,7 +456,7 @@ const data = {
         {
             _id: '40',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -468,7 +468,7 @@ const data = {
         {
             _id: '41',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -480,7 +480,7 @@ const data = {
         {
             _id: '42',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -492,7 +492,7 @@ const data = {
         {
             _id: '43',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -504,7 +504,7 @@ const data = {
         {
             _id: '44',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -516,7 +516,7 @@ const data = {
         {
             _id: '45',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -528,7 +528,7 @@ const data = {
         {
             _id: '46',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -540,7 +540,7 @@ const data = {
         {
             _id: '47',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -552,7 +552,7 @@ const data = {
         {
             _id: '48',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -564,7 +564,7 @@ const data = {
         {
             _id: '49',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -576,7 +576,7 @@ const data = {
         {
             _id: '50',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -588,7 +588,7 @@ const data = {
         {
             _id: '51',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -600,7 +600,7 @@ const data = {
         {
             _id: '52',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -612,7 +612,7 @@ const data = {
         {
             _id: '53',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -624,7 +624,7 @@ const data = {
         {
             _id: '54',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -636,7 +636,7 @@ const data = {
         {
             _id: '55',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -648,7 +648,7 @@ const data = {
         {
             _id: '56',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -660,7 +660,7 @@ const data = {
         {
             _id: '57',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -672,7 +672,7 @@ const data = {
         {
             _id: '58',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -684,7 +684,7 @@ const data = {
         {
             _id: '59',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -696,7 +696,7 @@ const data = {
         {
             _id: '60',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -708,7 +708,7 @@ const data = {
         {
             _id: '61',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -720,7 +720,7 @@ const data = {
         {
             _id: '62',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -732,7 +732,7 @@ const data = {
         {
             _id: '63',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -744,7 +744,7 @@ const data = {
         {
             _id: '64',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
@@ -756,7 +756,7 @@ const data = {
         {
             _id: '65',
             name: 'Rose Bush',
-            category: 'Garden Plants & Flowers',
+            category: 'Garden-Plants-&-Flowers',
             image: '/images/p16.jpg',
             price: 34.99,
             countInStock: 10,
