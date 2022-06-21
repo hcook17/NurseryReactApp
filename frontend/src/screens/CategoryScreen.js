@@ -1,8 +1,8 @@
 
 import axios from 'axios';
 import Product from '../components/Product';
-import { useEffect, useReducer,  } from 'react';
-import {  Link, useParams } from 'react-router-dom';
+import { useEffect, useReducer, } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import Row from 'react-bootstrap/esm/Row';
 import Container from 'react-bootstrap/esm/Container';
 import Col from 'react-bootstrap/esm/Col';
@@ -24,14 +24,14 @@ const reducer = (state, action) => {
 
 
 export default function CategoryScreen() {
-        const params = useParams()
-        const { category } = params
+    const params = useParams()
+    const { category } = params
 
-        const [{ loading, error, products }, dispatch] = useReducer(reducer, {
-            products: [],
-            loading: true,
-            error: '',
-        });
+    const [{ loading, error, products }, dispatch] = useReducer(reducer, {
+        products: [],
+        loading: true,
+        error: '',
+    });
     useEffect(() => {
         const fetchData = async () => {
             dispatch({ type: 'FETCH_REQUEST' });
@@ -51,20 +51,20 @@ export default function CategoryScreen() {
             <Row className="traversal" >Home / {category} </Row>
             <Row className="list">
                 <h2 className="category">PRODUCT CATEGORIES</h2>
-                <Col className="items"><Link reloadDocument to={`/products/Annual-Flowers`}>Annual Flowers</Link></Col>
-                <Col className="items"><Link reloadDocument to={`/products/Garden-Plants-&-Flowers`}>Garden Plants & Flowers</Link></Col>
-                <Col className="items"><Link reloadDocument to={`/products/Garden-Supplies-&-Plant-Care`}>Garden Supplies & Plant Care</Link></Col>
+                <Col className="items"><Link className="cat" reloadDocument to={`/products/Annual-Flowers`}>Annual Flowers</Link></Col>
+                <Col className="items"><Link className="cat" reloadDocument to={`/products/Garden-Plants-&-Flowers`}>Garden Plants & Flowers</Link></Col>
+                <Col className="items"><Link className="cat" reloadDocument to={`/products/Garden-Supplies-&-Plant-Care`}>Garden Supplies & Plant Care</Link></Col>
             </Row>
-        <p> {category}</p>
-        {
-          loading ? (
-          <div>Loading...</div>
-          ) : error ? (
-          <div>{error}</div>
-          ) : (
-        products.map((products) => (
-          <Product key={products._id} product={products}></Product>
-        )))}
+            <p> {category}</p>
+            {
+                loading ? (
+                    <div>Loading...</div>
+                ) : error ? (
+                    <div>{error}</div>
+                ) : (
+                    products.map((products) => (
+                        <Product key={products._id} product={products}></Product>
+                    )))}
         </Container>
     );
 }

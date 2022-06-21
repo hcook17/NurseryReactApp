@@ -17,7 +17,7 @@ export default function CartScreen() {
     } = state;
 
     const updateCartHandler = async (item, quantity) => {
-        const { data } = await axios.get(`/api/products/${item._id}`);
+        const { data } = await axios.get(`/home/products/:id`);
         if (data.countInStock < quantity) {
             window.alert('Sorry. Product is out of stock');
             return;
@@ -36,8 +36,8 @@ export default function CartScreen() {
     };
 
     return (
-        <div>
-    
+        <div className='cart'>
+
             <h1>Shopping Cart</h1>
             <Row>
                 <Col md={8}>
@@ -56,7 +56,7 @@ export default function CartScreen() {
                                                 alt={item.name}
                                                 className="img-fluid rounded img-thumbnail"
                                             ></img>{' '}
-                                            <Link to={`/products/${item.categorySlug}/${item.slug}`}>{item.name}</Link>
+                                            <Link className='cart' to={`/products/${item.categorySlug}/${item.slug}`}>{item.name}</Link>
                                         </Col>
                                         <Col md={3}>
                                             <Button
@@ -66,9 +66,9 @@ export default function CartScreen() {
                                                 variant="light"
                                                 disabled={item.quantity === 1}
                                             >
-                                                <i className="fas fa-minus-circle"></i>
+                                                <i>Delete</i>
                                             </Button>{' '}
-                                            <span>{item.quantity}</span>{' '}
+                                            <span>You have:{item.quantity}  </span>{'  '}
                                             <Button
                                                 variant="light"
                                                 onClick={() =>
@@ -76,16 +76,16 @@ export default function CartScreen() {
                                                 }
                                                 disabled={item.quantity === item.countInStock}
                                             >
-                                                <i className="fas fa-plus-circle"></i>
+                                                <i>Add</i>
                                             </Button>
                                         </Col>
-                                        <Col md={3}>${item.price}</Col>
+                                        <Col md={3}>${item.price} per item</Col>
                                         <Col md={2}>
                                             <Button
                                                 onClick={() => removeItemHandler(item)}
                                                 variant="light"
                                             >
-                                                <i className="fas fa-trash"></i>
+                                                <i>Remove</i>
                                             </Button>
                                         </Col>
                                     </Row>

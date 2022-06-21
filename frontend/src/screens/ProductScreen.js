@@ -45,21 +45,21 @@ export default function ProductScreen() {
         fetchData();
     }, [slug]);
 
-    const {state, dispatch: ctxDispatch} = useContext(Store);
-    const {cart} = state;
+    const { state, dispatch: ctxDispatch } = useContext(Store);
+    const { cart } = state;
 
-    const addToCartHandler = async() => {
+    const addToCartHandler = async () => {
         const existItem = cart.cartItems.find((x) => x._id === product._id);
         const quantity = existItem ? existItem.quantity + 1 : 1;
         //request looks like the home/products/category/slug
-        const {data} = await axios.get(``);
+        const { data } = await axios.get(``);
         if (data.countInStock < quantity) {
             window.alert('Product out of Stock.  Check back on Wednesday.');
             return;
         }
         ctxDispatch({
             type: 'CART_ADD_ITEM',
-            payload:{...product, quantity},
+            payload: { ...product, quantity },
         });
 
     };
@@ -78,18 +78,14 @@ export default function ProductScreen() {
                 <Col className="items">Garden Supplies & Plant Care</Col>
             </Row>
             <Row className="pic">
-                <img className="items" src={product.image} alt={product.name}/>
+                <img className="items" src={product.image} alt={product.name} />
             </Row>
             <Row className="listTwo">
                 <h1 className='name'>{product.name}</h1>
                 <div className="description">{product.description}</div>
                 <div className="productPrice">${product.price}</div>
-                <h3>Select Pick-up Location</h3>
+                <h3>Pick-up from Ypsilanti Store</h3>
                 <li>
-                    <ul>West Bloomfield</ul>
-                    <ul>Clinton Township</ul>
-                    <ul>Royal Oak</ul>
-                    <ul>Dearborn Heights</ul>
                     <h3>
                         <Button onClick={addToCartHandler}>Add to Cart</Button>
                     </h3>

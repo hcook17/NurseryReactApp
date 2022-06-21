@@ -9,25 +9,25 @@ export default function SigninScreen() {
     const redirect = redirectInUrl ? redirectInUrl : '/';
     return (
         <Container className="small-container">
-           
-                <title>Sign In</title>
-        
-            <h1 className="my-3">Sign In</h1>
+
+
+
+            <h1>Sign In</h1>
             <Form>
-                <Form.Group className="mb-3" controlId="email">
+                <Form.Group controlId="email">
                     <Form.Label>Email</Form.Label>
                     <Form.Control type="email" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="password">
+                <Form.Group controlId="password">
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" required />
                 </Form.Group>
-                <div className="mb-3">
+                <div>
                     <Button type="submit">Sign In</Button>
                 </div>
-                <div className="mb-3">
+                <div>
                     New customer?{' '}
-                    <Link to={`/signup?redirect=${redirect}`}>Create your account</Link>
+                    <Link className='cart' to={`/signup?redirect=${redirect}`}>Create your account</Link>
                 </div>
             </Form>
         </Container>
