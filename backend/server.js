@@ -3,24 +3,6 @@ import data from "./data.js";
 
 const app = express();
 
-const cors = require("cors")
-
-const genericError = "Sorry, something went wrong!"
-
-app.use(express.json())
-
-const whitelist = ["http://localhost:3001"] //Change to the port in which react app is running
-const corsOptions = {
-    origin: function (origin, callback) {
-        if (!origin || whitelist.indexOf(origin) !== -1) {
-            callback(null, true)
-        } else {
-            callback(new Error("Not allowed by CORS"))
-        }
-    },
-    credentials: true,
-}
-app.use(cors(corsOptions))
 
 
 app.get('/home', (req, res) => {
