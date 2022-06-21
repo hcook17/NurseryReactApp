@@ -1,0 +1,352 @@
+/* COMPONENTS CSS*/
+
+/* NAVBAR CSS */
+body, html  {
+    margin: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    height: 100%;
+    font-family: monospace;
+    background-color: rgb(230, 229, 228);
+}
+svg {
+    color: #fffbec;
+    display: flex;
+    margin: 10px;
+}
+header {
+    height: 150px;
+}
+body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #5aa75f;
+    height: 90px;
+    padding: 30px 25px;
+    justify-content: center;
+    width: 100%;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+    color: #fffbec;
+}
+
+
+
+p {
+    width: 100%;
+    text-align: center;
+}
+img.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: auto;
+    
+}
+/* Image */
+img.medium {
+    max-width: 40rem;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+div.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* Card */
+div.card{
+    background-color: rgb(212, 200, 143);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 18rem; 
+}
+header {
+    display: flex;
+    width: 100%;
+}
+div.card-body{
+
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+div.price {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #fffbec;
+    
+  
+
+}
+a {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    color: #fffbec;
+}
+a:link {
+    text-decoration: none;
+
+}
+h2 {
+    color: #fffbec;
+    width: 100%;
+    text-align: center;
+}
+
+/* Rating */
+.rating span {
+    color: gold;
+    margin: 0.1rem;
+
+}
+.rating span:last-child {
+    color: #fffbec;
+    width: 100%;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+  opacity: 1;
+  color: #fffbec;
+  border: none;
+  justify-content: center;
+  text-align: center;
+  background-color: #5aa75f;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    text-align: center;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    width: 150px;
+  display: none;
+  position: absolute;
+  opacity: 1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(250, 214, 170);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: whitesmoke;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1b15d;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #5aa75f;}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+
+/*product screem */
+img.detailPic {
+    width: 100px;
+    height: 100px;
+}
+div.itemDescription.container-fluid {
+    color:#5aa75f;
+}
+div.HomeScreenMini {
+    color:#5aa75f;
+    font-size: xx-large;
+}
+div#root {
+    display: inline-block;
+}
+div.traversal.row {
+    width: 100%;
+    background-color: #e9dac7;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+div.list.row {
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 20%;
+    height: 10%;
+    text-align: left;
+
+}
+h2.category {
+    border-bottom: #5aa75f 2px solid;
+    margin-top: 0px;
+    text-align: left;
+}
+div.listTwo.row {
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 20%;
+    height: 10%;
+    text-align: left;
+}
+div.items.col {
+    margin: 3px;
+}
+div.itemsTwo.col {
+    margin: 6px;
+}
+div.pic.row {
+    width: 15%;
+    height: 15%;
+}
+img.items {
+    height: 100%;
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1.name {
+    border-bottom: #5aa75f 2px solid;
+    margin-top: 0px;
+}
+li {
+    list-style-type: none;
+    text-align: left;
+}
+ul {
+    text-align: left;
+    
+
+}
+div.description {
+    margin: 6px;
+}
+div.productPrice {
+    margin: 6px;
+}
+a.contactLink {
+color: #fffbec;
+  border: none;
+  justify-content: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: larger;
+}
+h1.contactheader {
+   color: #5aa75f;
+   text-align: center;
+   width: 100%;
+}
+p.contactdescription {
+   color: #5aa75f;
+   width: 100%;
+}
+
+.form-box{
+    min-width: 100%;
+    height: 90vh;
+    margin: 0vw;
+    padding: 5vw;
+    background-color: beige;
+    justify-content: center;
+
+
+    /* position:relative for .prevBtn and .nextBtn position:absolute; */
+    position:relative; 
+}
+
+.field1{
+    position:relative; 
+    /* position:relative for .prevBtn and .nextBtn position:absolute; */
+}
+
+
+
+/******** h5 ********/
+
+.form-box h5{
+    font-size: 35px ;
+    text-align: center;
+    color: #F55A00;
+    margin: 0 0 .5vh 0;
+}
+
+
+
+/******** label ********/
+
+.form-box label{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 2vh 0;
+}
+
+
+
+/******** input textarea ********/
+
+.form-box input, textarea{
+    display: block;
+    width: 100%;
+    padding: .5rem .8rem .5rem .8rem;
+    margin: .9vw 0;
+    border:0;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #5aa75f;
+}
+
+.form-box textarea{
+    height: 15vh;
+}
+
+
+.img-thumbnail {
+  height: 80px;
+}
+
+.small-container {
+  max-width: 600px;
+}
