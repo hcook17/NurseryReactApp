@@ -51,9 +51,9 @@ export default function CategoryScreen() {
             <Row className="traversal" >Home / {category} </Row>
             <Row className="list">
                 <h2 className="category">PRODUCT CATEGORIES</h2>
-                <Col className="items"><Link to={`/products/Annual-Flowers`}>Annual Flowers</Link></Col>
-                <Col className="items"><Link to={`/products/Garden-Plants-&-Flowers`}>Garden Plants & Flowers</Link></Col>
-                <Col className="items"><Link to={`/products/Garden-Supplies-&-Plant-Care`}>Garden Supplies & Plant Care</Link></Col>
+                <Col className="items"><Link reloadDocument to={`/products/Annual-Flowers`}>Annual Flowers</Link></Col>
+                <Col className="items"><Link reloadDocument to={`/products/Garden-Plants-&-Flowers`}>Garden Plants & Flowers</Link></Col>
+                <Col className="items"><Link reloadDocument to={`/products/Garden-Supplies-&-Plant-Care`}>Garden Supplies & Plant Care</Link></Col>
             </Row>
         <p> {category}</p>
         {
