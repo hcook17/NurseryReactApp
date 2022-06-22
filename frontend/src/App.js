@@ -13,6 +13,8 @@ import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from '@fortawesome/fontawesome-free-solid';
 import Badge from "react-bootstrap/esm/Badge";
 import SigninScreen from "./screens/SigninScreen";
+import ProfileScreen from "./screens/ProfileScreen";
+import SignupScreen from "./screens/SignupScreen";
 
 export default function App() {
   const { state } = useContext(Store);
@@ -26,7 +28,7 @@ export default function App() {
           <Shop />
           <div className='options'><Contact /> </div>
           <div className='options'>ACCOUNT</div>
-          <div className='options'>LOGIN</div>
+          <Link to="/signin" className='options'>LOGIN</Link>
           <Link to="/cart" className="nav-link"><FontAwesomeIcon icon={faShoppingCart} size="xl" />
             {cart.cartItems.length > 0 && (
               <Badge pill bg="danger">
@@ -43,6 +45,8 @@ export default function App() {
         <Route path="/signin" element={<SigninScreen />} />
         <Route path="/cart" element={<CartScreen />} />
         <Route path='/Contact' element={<ContactScreen/>} />
+        <Route path="/profile" element={<ProfileScreen />} />
+        <Route path="/signup" element={<SignupScreen />} />
       </Routes>
     </BrowserRouter>
   )

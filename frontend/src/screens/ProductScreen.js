@@ -26,7 +26,7 @@ export default function ProductScreen() {
     const params = useParams()
     const { category, slug, categorySlug } = params
 
-    const [{ loading, error, product }, dispatch] = useReducer(reducer, {
+    const [{ loading, error, product, }, dispatch] = useReducer(reducer, {
         //show only one product
         product: [],
         loading: true,
@@ -36,7 +36,7 @@ export default function ProductScreen() {
         const fetchData = async () => {
             dispatch({ type: 'FETCH_REQUEST' });
             try {
-                const result = await axios.get(`/home/products/${category}/${slug}`);
+                const result = await axios.get(`/home/products/${categorySlug}/${slug}`);
                 dispatch({ type: 'FETCH_SUCCESS', payload: result.data })
             } catch (err) {
                 dispatch({ type: 'FETCH_FAIL', payload: err.message });
@@ -49,10 +49,10 @@ export default function ProductScreen() {
     const { cart } = state;
 
     const addToCartHandler = async () => {
-        const existItem = cart.cartItems.find((x) => x._id === product._id);
+        const existItem = cart.cartItems.find((x) => x.id === product.id);
         const quantity = existItem ? existItem.quantity + 1 : 1;
         //request looks like the home/products/category/slug
-        const { data } = await axios.get(``);
+        const { data } = await axios.get(`/home/products/${product.id}`);
         if (data.countInStock < quantity) {
             window.alert('Product out of Stock.  Check back on Wednesday.');
             return;

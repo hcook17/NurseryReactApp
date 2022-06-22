@@ -419,3 +419,10 @@ Button {
 div.cart {
     margin-left: 45%;
 }
+a.options {
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+}

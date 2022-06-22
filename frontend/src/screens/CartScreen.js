@@ -32,7 +32,7 @@ export default function CartScreen() {
     };
 
     const checkoutHandler = () => {
-        navigate('/signin?redirect=/shipping');
+        navigate('/signin?redirect=/payment');
     };
 
     return (
